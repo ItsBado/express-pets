@@ -434,3 +434,29 @@ textarea.form-field {
   padding: 10px 16px;
   margin: 0 0 1rem 0;
 }
+
+/* Contact Form Styles */
+.form-overlay { /* semi-tarnsparent blurred */
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  position: fixed; /* full screen */
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  z-index: 100;
+
+  display: flex; /* center it */
+  justify-content: center;/* center it */
+  align-content: center;/* center it */
+}
+
+.form-overlay-inner {
+  max-width: 880px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.075);
+  background-color: #FFF;
+  margin: 16px;
+
+  flex: 1;/* center it */
+  align-self: center;/* center it */
+}
